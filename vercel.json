@@ -1,0 +1,12 @@
+{
+  "env": {
+    "NEXT_PUBLIC_REST_API_ENDPOINT": "https://monkfish-app-zihfk.ondigitalocean.app/",
+    "RAZORPAY_SECRET": "rzp_live_sgDVHALrmF2KRS"
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_REST_API_ENDPOINT": "https://monkfish-app-zihfk.ondigitalocean.app/",
+      "RAZORPAY_SECRET": "rzp_live_sgDVHALrmF2KRS"
+    }
+  }
+}

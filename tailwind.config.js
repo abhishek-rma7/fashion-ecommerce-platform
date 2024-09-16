@@ -1,0 +1,113 @@
+module.exports = {
+  mode: 'jit',
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        body: '#5A5A5A',
+        heading: '#212121',
+        input: '#1D1E1F',
+        review: "#0c0e13",
+        black: '#000',
+        white: '#fff',
+        linen: '#FBF1E9',
+        linenSecondary: '#ECE7E3',
+        olive: '#3D9970',
+        maroon: '#B03060',
+        brown: '#C7844B',
+        placeholder: '#707070',
+        borderBottom: '#f7f7f7',
+        facebook: '#4267B2',
+        facebookHover: '#395fad',
+        google: '#4285F4',
+        googleHover: '#307bf9',
+        gray: {
+          50: '#FBFBFB',
+          100: '#F1F1F1',
+          150: '#F4F4F4',
+          200: '#F9F9F9',
+          300: '#E6E6E6',
+          350: '#E9ECEF',
+          400: '#999999',
+          500: '#D8D8D8',
+          600: '#3A3A3A',
+          700: '#292929',
+          800: '#707070',
+        },
+        lightBlue: {
+          "50": "#e1f5fe",
+          "100": "#b3e5fc",
+          "200": "#81d4fa",
+          "300": "#4fc3f7",
+          "400": "#29b6f6",
+          "500": "#03a9f4",
+          "600": "#039be5",
+          "700": "#0288d1",
+          "800": "#0277bd",
+          "900": "#01579b",
+          "100-accent": "#80d8ff",
+          "200-accent": "#40c4ff",
+          "400-accent": "#00b0ff",
+          "700-accent": "#0091ea",
+        }
+      },
+      fontSize: {
+        '10px': '.625rem',
+      },
+      screens: {
+        sm: '480px',
+        lg: '1025px',
+        '2xl': '1500px',
+        '3xl': '1780px',
+      },
+      spacing: {
+        '430px': '430px',
+        '450px': '450px',
+        '500px': '500px',
+        '64vh': '64vh',
+      },
+      minHeight: {
+        '50px': '50px',
+      },
+      scale: {
+        80: '0.8',
+        85: '0.85',
+        300: '3',
+        400: '4',
+      },
+      animation: {
+        shine: 'shine 1s',
+        bounce: "bounce 2.5s infinite"
+      },
+      keyframes: {
+        shine: {
+          '100%': { left: '125%' },
+        },
+      },
+    },
+    boxShadow: {
+      cart: '0 3px 6px rgba(0,0,0,0.12)',
+      product: '0 6px 12px rgba(0,0,0,.08)',
+      listProduct: '0 2px 4px rgba(0,0,0,.08)',
+      navigation: '0 3px 6px rgba(0, 0, 0, 0.16)',
+      navigationReverse: '0 -3px 6px rgba(0, 0, 0, 0.16)',
+      header: '0 2px 3px rgba(0, 0, 0, 0.08)',
+      subMenu: '1px 2px 3px rgba(0, 0, 0, 0.08)',
+      bottomNavigation: '0 -2px 3px rgba(0, 0, 0, 0.06)',
+      cookies: '0 -2px 3px rgba(0, 0, 0, 0.04)',
+      avatar: '0px 15px 30px rgba(0, 0, 0, 0.16)',
+    },
+    fontFamily: {
+      body: ["'Open Sans', sans-serif"],
+      satisfy: ["'Satisfy', cursive"],
+      segoe: ["'Segoe UI', sans-serif"],
+      poppins: ["'Poppins', sans-serif"]
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwindcss-rtl'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+};
